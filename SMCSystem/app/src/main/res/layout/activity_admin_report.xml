@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AdminReport">
+
+
+    <androidx.cardview.widget.CardView
+
+        android:id="@+id/details"
+
+        android:layout_width="match_parent"
+
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="20dp"
+
+        android:layout_marginTop="20dp"
+
+        android:layout_marginRight="20dp"
+
+        android:layout_marginBottom="20dp"
+
+        android:elevation="10dp"
+
+        app:cardCornerRadius="10dp">
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical">
+
+
+            <TextView
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="20dp"
+
+                android:text="Total Completed and pending:"
+
+                android:textSize="23sp"
+
+                android:textStyle="bold" />
+
+            <!--View to display the line-->
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginTop="5dp"
+
+                android:layout_marginRight="20dp" />
+
+            <!--View to display the line-->
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="10dp">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="Completed in percent"
+
+                    android:textSize="18sp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvPython"
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="0"
+
+
+                    android:textAlignment="textEnd"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="Pending in percent"
+
+                    android:textSize="18sp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvCPP"
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="0"
+
+
+                    android:textAlignment="textEnd"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+
+
+            <!--View to display the line-->
+
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="Total No.of Complaints  "
+
+                    android:textSize="18sp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvtotalnoofcom"
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="0"
+
+                    android:textAlignment="textEnd"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="Total No.of Complaints Completed "
+
+                    android:textSize="18sp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvtotalnoofcomcomplited"
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="0"
+
+                    android:textAlignment="textEnd"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="25dp"
+
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="25dp"
+
+                android:layout_marginBottom="10dp">
+
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+
+                    android:layout_height="wrap_content"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="Total No.of Complaints Pending "
+
+                    android:textSize="18sp" />
+
+
+                <TextView
+
+                    android:id="@+id/tvtotalnoofcompending"
+
+                    android:layout_width="fill_parent"
+
+                    android:layout_height="wrap_content"
+
+                    android:layout_alignParentRight="true"
+
+                    android:fontFamily="sans-serif-light"
+
+                    android:text="0"
+
+                    android:textAlignment="textEnd"
+
+                    android:textSize="18sp"
+
+                    android:textStyle="bold" />
+
+
+            </RelativeLayout>
+
+            <View
+
+                android:layout_width="match_parent"
+
+                android:layout_height="1dp"
+
+                android:layout_marginLeft="20dp"
+
+                android:layout_marginRight="20dp" />
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>
